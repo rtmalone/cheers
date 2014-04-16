@@ -6,13 +6,13 @@
 #end
 
 puts "What's your name?"
-name = gets.chomp
+name = gets.chomp.upcase
 #puts "Your name is:" + name
 name.each_char do |character|
-  if character.downcase == "a" or character.downcase == "e" or character.downcase == "i" or character.downcase == "o" or character.downcase == "u"
-    puts "Give me an " + character
+  if character == "A" or character == "E" or character == "I" or character == "O" or character == "U"
+    puts "Give me an.." + character
   else
-    puts "Give me a  " + character
+    puts "Give me a..." + character
   end
 end
-puts name.upcase + "'s just GRAND"
+puts name + "'s just GRAND"
